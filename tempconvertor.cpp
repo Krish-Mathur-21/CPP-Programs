@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    double temperature;;
+    double temperature;
     char given, choice;
 
     cout << "Enter temperature value with it's temperature type with a space: ";
