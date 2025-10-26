@@ -14,16 +14,6 @@ int main() {
       
     switch(choice){
         case 'F':
-        if (given == 'F' || given == 'f')
-        {
-            cout << "temperature: " << temperature << "F" << endl;
-        }else if(given == 'C' || given == 'c'){
-            cout << "temperature: " << (temperature*(9/5.0)) + 32 << "F" << endl;
-        }else if(given == 'K' || given == 'k'){
-            cout << "temperature: " << ((temperature - 273.15)*(9/5.0)) +32 << "F" << endl;
-        }
-        break;
-
         case 'f':
         if (given == 'F' || given == 'f')
         {
@@ -36,16 +26,7 @@ int main() {
         break;
 
         case 'C':
-        if (given == 'C' || given == 'c'){
-            cout << "temperature: " << temperature << "C" << endl;
-        }else if(given == 'F' || given == 'f'){
-            cout << "temperature: " << (temperature - 32)*(5/9.0) << "C" << endl;
-        }else if(given == 'K' || given == 'k'){
-            cout << "temperature: " << (temperature - 273.15) << "C" << endl;
-        }
-        break;
-
-          case 'c':
+        case 'c':
         if (given == 'C' || given == 'c'){
             cout << "temperature: " << temperature << "C" << endl;
         }else if(given == 'F' || given == 'f'){
@@ -56,15 +37,6 @@ int main() {
         break;
 
         case 'K':
-        if(given == 'K' || given == 'k'){
-            cout << "temperature: " << temperature << "K" << endl;
-        }else if(given == 'F' || given == 'f'){
-            cout << "temperature: " << ((temperature - 32)*(5/9.0)) + 273.15 << "K" << endl;
-        }else if(given == 'C' || given == 'c'){
-            cout << "temperature: " << (temperature + 273.15) << "K" << endl;
-        }
-        break;
-
         case 'k':
         if(given == 'K' || given == 'k'){
             cout << "temperature: " << temperature << "K" << endl;
